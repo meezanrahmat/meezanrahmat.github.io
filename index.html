@@ -1,171 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Meezan Rahmat | Technical Account Manager</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f7fa;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md Meezan Rahmat | Technical Account Manager</title>
 
-        header {
-            background: #1f2937;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
+body{
+    font-family:'Inter',sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.7;
+}
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
 
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:90px 0;
+}
 
-        h2 {
-            color: #1f2937;
-        }
+.hero-content{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
 
-        .skills span {
-            display: inline-block;
-            background: #e5e7eb;
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #1f2937;
-            color: white;
-        }
+.hero-text h2{
+    font-size:1.2rem;
+    font-weight:400;
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
 
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-    </style>
+.hero-text p{
+    max-width:700px;
+    font-size:1.05rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 24px;
+    background:white;
+    color:#1e3a8a;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.profile-card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:16px;
+    min-width:280px;
+}
+
+.profile-card h3{
+    margin-bottom:15px;
+}
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:50px;
+    color:#0f172a;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.07);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.skill{
+    background:#eff6ff;
+    color:#1d4ed8;
+    padding:10px 16px;
+    border-radius:25px;
+    display:inline-block;
+    margin:5px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.timeline-item{
+    border-left:3px solid #2563eb;
+    padding-left:20px;
+    margin-bottom:30px;
+}
+
+.timeline-item h3{
+    color:#0f172a;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.stat-box{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.06);
+}
+
+.stat-box h3{
+    font-size:2rem;
+    color:#2563eb;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Md Meezan Rahmat</h1>
-    <p>Technical Account Manager | Key Account Manager | Client Success & Service Delivery Professional</p>
-</header>
+<section class="hero">
+<div class="container hero-content">
 
+<div class="hero-text">
+<h1>Md Meezan Rahmat</h1>
+
+<h2>
+Technical Account Manager | Key Account Manager |
+Client Success & Service Delivery Professional
+</h2>
+
+<p>
+Over 20 years of experience managing enterprise customers,
+driving service delivery excellence, coordinating software
+implementations, resolving critical escalations, and building
+long-term customer relationships across international markets.
+</p>
+
+<a href="https://www.linkedin.com/in/md-meezan-rahmat-8763a287" class="btn" target="_blank">
+View LinkedIn Profile
+</a>
+</div>
+
+<div class="profile-card">
+<h3>Professional Snapshot</h3>
+<p>✔ 20+ Years Experience</p>
+<p>✔ Enterprise Client Management</p>
+<p>✔ Customer Success & Service Delivery</p>
+<p>✔ Software Deployments & Integrations</p>
+<p>✔ Africa, Asia & South America</p>
+<p>✔ 6+ International Markets</p>
+</div>
+
+</div>
+</section>
+
+<section>
 <div class="container">
 
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            Experienced client management and service delivery professional with over 20 years of experience
-            managing enterprise customers across international markets. Skilled in technical account management,
-            customer success, implementation coordination, stakeholder engagement, escalation management,
-            software deployment, and operational excellence.
-        </p>
+<h2 class="section-title">About Me</h2>
 
-        <p>
-            I act as the bridge between clients and technical, product, operations, and finance teams,
-            ensuring seamless delivery, customer satisfaction, business continuity, and long-term account growth.
-        </p>
-    </div>
+<div class="card">
+<p>
+I specialize in Technical Account Management, Customer Success,
+Service Delivery, and Strategic Client Engagement. Throughout my
+career, I have served as the bridge between customers and internal
+technical, product, operations, and finance teams to ensure
+successful implementations, seamless support, and business continuity.
+</p>
+</div>
 
-    <div class="card">
-        <h2>Core Expertise</h2>
+</div>
+</section>
 
-        <div class="skills">
-            <span>Technical Account Management</span>
-            <span>Key Account Management</span>
-            <span>Customer Success</span>
-            <span>Service Delivery</span>
-            <span>Stakeholder Management</span>
-            <span>Escalation Management</span>
-            <span>Software Deployment</span>
-            <span>Third-Party Integrations</span>
-            <span>Payment Processing Solutions</span>
-            <span>Vendor Management</span>
-            <span>Client Relationship Management</span>
-            <span>Operational Excellence</span>
-        </div>
-    </div>
+<section>
+<div class="container">
 
-    <div class="card">
-        <h2>Professional Experience</h2>
+<h2 class="section-title">Core Competencies</h2>
 
-        <h3>Key Account Manager – Armsoftech Pvt. Ltd.</h3>
-        <p>
-            Managing enterprise clients, implementation activities, technical coordination,
-            deployment support, issue resolution, system audits, and customer success initiatives.
-        </p>
+<div class="card">
 
-        <h3>Client Management & Operations – Gaming & Technology Sector</h3>
-        <p>
-            Supported international customers across Africa, Asia, and South America,
-            handling deployments, integrations, service continuity, and high-volume transaction platforms.
-        </p>
-
-        <h3>ISP Operations & Customer Service</h3>
-        <p>
-            Experience in broadband service operations, customer support management,
-            service delivery, and operational coordination.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>International Exposure</h2>
-        <p>
-            Successfully managed customer relationships, implementations, and service delivery
-            engagements across 6+ international markets spanning Africa, Asia, and South America.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>Connect</h2>
-
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/md-meezan-rahmat-8763a287" target="_blank">
-                View Profile
-            </a>
-        </p>
-
-        <p>
-            Email: meezan.rahmat@gmail.com
-        </p>
-    </div>
+<span class="skill">Technical Account Management</span>
+<span class="skill">Key Account Management</span>
+<span class="skill">Customer Success</span>
+<span class="skill">Service Delivery</span>
+<span class="skill">Stakeholder Management</span>
+<span class="skill">Escalation Management</span>
+<span class="skill">CRM Solutions</span>
+<span class="skill">Software Deployment</span>
+<span class="skill">Payment Processing</span>
+<span class="skill">Third-Party Integrations</span>
+<span class="skill">Vendor Management</span>
+<span class="skill">Operational Excellence</span>
 
 </div>
 
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Professional Journey</h2>
+
+<div class="card">
+
+<div class="timeline-item">
+<h3>Key Account Manager — Armsoftech Pvt. Ltd.</h3>
+<p>
+Enterprise customer management, deployment coordination,
+technical audits, issue resolution, platform implementation,
+and customer success initiatives.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>International Gaming & Technology Operations</h3>
+<p>
+Managed deployments, integrations, customer engagement,
+and service continuity for transaction-intensive platforms
+across multiple international markets.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>ISP Service Operations</h3>
+<p>
+Customer support, operational coordination,
+service delivery management, and network service excellence.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Highlights</h2>
+
+<div class="stats">
+
+<div class="stat-box">
+<h3>20+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="stat-box">
+<h3>6+</h3>
+<p>International Markets</p>
+</div>
+
+<div class="stat-box">
+<h3>100+</h3>
+<p>Enterprise Engagements</p>
+</div>
+
+<div class="stat-box">
+<h3>24×7</h3>
+<p>Operational Support Experience</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container contact">
+
+<h2 class="section-title">Let's Connect</h2>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/md-meezan-rahmat-8763a287" target="_blank">
+www.linkedin.com/in/md-meezan-rahmat-8763a287
+</a>
+</p>
+
+<br>
+
+<p>
+Open to discussions around Technical Account Management,
+Customer Success, Service Delivery, Client Operations,
+and Enterprise Support Leadership.
+</p>
+
+</div>
+</section>
+
 <footer>
-    © 2026 Md Meezan Rahmat | Professional Portfolio
+© 2026 Md Meezan Rahmat | All Rights Reserved
 </footer>
 
 </body>
